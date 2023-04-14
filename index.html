@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ເວັບຮຽນຂຽນເວັບໄຊ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family:'Noto Sans Lao', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <label >HTML</label>
+            <textarea name="html" id="html" onkeyup="displayResults()"></textarea>
+            <label >CSS</label>
+            <textarea name="css" id="css" onkeyup="displayResults()"></textarea>
+            <label >JAVASCRIPT</label>
+            <textarea name="javascript" id="javascript" onkeyup="displayResults()"></textarea>
+        </div>
+        <div class="output">
+            <label>ຜົນອອກທີໄດ້:</label>
+            <iframe id="result"></iframe>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
